@@ -73,7 +73,7 @@
 }
 
 @media(max-width:768px){
-    .banner{padding:40px 20px 50px 20px;text-align:center;}
+    .banner{padding:40px 0 50px 0;text-align:center;}
     .banner h2{font-size:30px;line-height:45px;}
     .banner p{font-size:14px;padding:20px 0;color:#fff;}
     .banner .view{margin-top:20xp;}
