@@ -46,7 +46,7 @@
 .search i{font-size:27px;line-height:65px;}
 
 /* banner */
-.banner{padding:115px 50px;}
+.banner{padding:115px 50px;box-sizing: border-box;}
 .banner h2{font-size:46px;letter-spacing:-6px;line-height:55px;}
 .banner p{font-size:18px;padding:20px 0;letter-spacing:-1px;color:#999;}
 .banner em{font-size:18px;color:#f66b05;display:block;}
@@ -69,22 +69,15 @@
     .header .gnb{display:none;}
     .header .quick{display:none;}
     .mGnb{display:block;}
-    .search{display:block;}
-    
-    
-    
-    
-    
-    
-    
-        
-    
-    
-    
-    
+    .search{display:block;}    
 }
 
-
+@media(max-width:768px){
+    .banner{padding:40px 20px 50px 20px;text-align:center;}
+    .banner h2{font-size:30px;line-height:45px;}
+    .banner p{font-size:14px;padding:20px 0;color:#fff;}
+    .banner .view{margin-top:20xp;}
+}
 
 
 
