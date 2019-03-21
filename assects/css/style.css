@@ -42,9 +42,20 @@
 
 /*search*/
 .search{display:none;position:absolute;right:10px;top:0;}
+.search a{}
 .search i{font-size:27px;line-height:65px;}
 
-
+/* banner */
+.banner{padding:115px 50px;}
+.banner h2{font-size:46px;letter-spacing:-6px;line-height:55px;}
+.banner p{font-size:18px;padding:20px 0;letter-spacing:-1px;color:#999;}
+.banner em{font-size:18px;color:#f66b05;display:block;}
+.banner .view{font-size:16px;display:inline-block;margin-top:50px;border: 1px solid #333;background-color:#fff;padding:12px 42px;transition: all 0.3s ease;}
+.banner .view:hover{background-color:#0098FF;color:#fff;border: 1px solid #005FA2;}
+.banner-img1{background: url(../img/m_img1.jpg) no-repeat center top/cover;}
+.banner-img2{background: url(../img/m_img2.jpg) no-repeat center bottom/cover;}
+.banner-img3{background: url(../img/m_img3.jpg) no-repeat center bottom/cover;}
+.banner-img4{background: url(../img/m_img4.jpg) no-repeat center bottom/cover;}
 
 
 /* mediaquery */
