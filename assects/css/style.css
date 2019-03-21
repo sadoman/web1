@@ -284,7 +284,7 @@ overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:4;
 /* mediaquery */
 @media(max-width:1200px){
     .container{width:100%;}
-    #wrap{padding:0 15px;}
+   
 }
 
 
