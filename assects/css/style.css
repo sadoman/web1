@@ -6,8 +6,8 @@
 #sbanner{}
 #select{background-color:#1D7ABD;}
 #infor{}
-#ad{}
-#ad:before{}
+#ad{position:relative;background: url(../img/img05.jpg) no-repeat center 30%/cover;background-attachment:fixed;}
+#ad:before{content:'';width:100%;height:100%;background-color:rgba(255,128,64,0.2);position:absolute;left:0;top:0;}
 #blog{}
 #site{}
 #footer{}
@@ -107,6 +107,26 @@
 .infor .infor-box .in-right{float:left;width:50%;padding-left:50px;box-sizing:border-box;}
 .infor .infor-box .in-right li{font-size:14px;color:#666;}
 
+/* ad */
+
+.ad{text-align:center;padding:70px 0;z-index:10;position: relative;}
+/* position:relative를 사용해야하는 경우
+   ①position:absolute의 기준점이 필요할때
+   ②z-index를 사용해야 하는 경우 포지션값이 없으면 relative를 사용하여 z-index값을 인식시킬수 있다
+   ③요소의 위치를 유지한채 left,right,bottom의 위치값을 사용하고 싶을때
+*/
+.ad h3{font-size:40px;color:#fff;padding-bottom:20px;}
+.ad p{font-size:16px;color:#fff;}
+.ad .view{font-size:16px;display:inline-block;margin-top:50px;border: 1px solid #fff;/*background-color:#fff;*/color:#fff;padding:12px 42px;transition: all 0.3s ease;}
+.ad .view:hover{background-color:#fff;color:#000;border: 1px solid #005FA2;}
+
+
+
+
+
+
+
+
 
 /* mediaquery */
 @media(max-width:1200px){
@@ -126,6 +146,10 @@
     .infor .infor-box .in-left{width:100%;padding-bottom:5%;border-right:0;}
     .infor .infor-box .in-left em{width:auto;}
     .infor .infor-box .in-right{width:100%;padding-left:0;padding-top:5%;border-top:1px solid #ddd;}
+    /*ad*/
+    .ad br{display:;}
+    .ad h3{0 10% 5% 10%;}
+    .ad p{padding:0 20%;}
   
 }
 @media(max-width:1024px){
@@ -145,9 +169,14 @@
     
     /*infor*/
     .infor{padding:25px 0;}
+    .infor .infor-box{padding:0;}
     .infor h3{font-size:30px;}
     .inofr p{font-size:15px;}
-    
+    .infor .infor-box .in-left em{font-size:18px;}
+    .infor .infor-box .in-left strong{font-size:24px;}  
+      /*ad*/
+    .ad h3{font-size:24px;padding:0 5% 5% 5%;}
+    .ad p{font-size:14px;padding:0 20%;}
 }
 
 @media(max-width:600px){
@@ -164,8 +193,9 @@
     .select>div.simg2{background:none;background-color:#2886ca;}
     .select>div.simg3{background:none;background-color:#2886ca;}
     
-    /*infor*/    
-    
+    /*ad*/    
+    .ad h3{font-size:30px}
+    /*.ad p{font-size:30px}*/
 }
 
 @media(max-width:400px){
